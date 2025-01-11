@@ -55,8 +55,12 @@ for row in data_cleaned:
 
 # Question: How do you calculate the total purchase amount by Gender?
 total_purchase_by_gender = {}
-for row in data_cleaned:
-    total_purchase_by_gender[row["Gender"]] += float(row["Purchase_Amount"])
+for row in data_cleaned: 
+    #total_purchase_by_gender[row["Gender"]] += float(row["Purchase_Amount"])
+    if row["Gender"] in total_purchase_by_gender: 
+        total_purchase_by_gender[row["Gender"]] += float(row["Purchase_Amount"]) 
+    else: 
+        total_purchase_by_gender[row["Gender"]] = float(row["Purchase_Amount"])
 
 # Question: How do you calculate the average purchase amount by Age group?
 # assume age_groups is the grouping we want

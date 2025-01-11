@@ -15,4 +15,5 @@ validation_results_df = (
 print(validation_results_df)
 
 results = validation_results_df["status"].to_list()
-assert "FAIL" not in results == True
+#assert "FAIL" not in results == True
+assert "FAIL" not in results, "Error: 'FAIL' found in results"

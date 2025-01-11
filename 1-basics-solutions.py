@@ -61,7 +61,7 @@ count_tuple = (1, 2, 3, 1, 1, 2)
 
 # Question: How many times does the number 1 appear in count_tuple?
 print(count_tuple.count(1))  # Output: 3
-
+ 
 ## Finding the index of an element
 
 # Question: What is the index of the first occurrence of the number 2 in count_tuple?

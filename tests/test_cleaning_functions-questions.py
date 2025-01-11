@@ -17,4 +17,4 @@ def test_remove_duplicates():
     assert unique_data == expected_data
 
 
-# Run this with the command python -m pytest ./tests
+# Run this with the command python -m pytest ./tests/test_cleaning_function_solutions.py
